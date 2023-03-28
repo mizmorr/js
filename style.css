@@ -1,0 +1,81 @@
+body {
+    background-image:linear-gradient(to right, rgba(146,205,255,0), rgba(146,205,255,1));
+    padding: 20px;
+}
+h1{
+    font-size: 48px;
+}
+h3 {
+    font-size:28px
+}
+.main {
+    margin:20px;
+}
+.main > div{
+    margin-bottom: 30px;
+}
+.text_head{
+    color:rgba(100,205,255,1);
+    font-family: 'Playfair Display', serif;
+    text-shadow: 4px 2px 8px;
+}
+.text{
+    font-family: 'Lora', serif;
+    font-size: 20px;
+}
+.btn {
+    background-color: rgba(100,205,255,1);
+    border: 0px ;
+    border-left: 4px solid rgb(0, 115, 168);
+    color:rgb(0, 115, 168);
+}
+.btn:hover {
+    cursor:pointer;
+    background-color: #74ffff;
+}
+.hidden{
+    display:none;
+}
+
+div.date {
+    width: 350px;
+    height: 50px;
+    border-bottom:4px solid rgb(0, 115, 168);
+}
+div.date > p {
+    text-align:center;
+    vertical-align:bottom;
+    display:table-cell;
+    font-family: 'Lora', serif;
+}
+.second_table {
+    background-image:linear-gradient(to right,rgba(0, 0, 0,0), rgb(59, 59, 59));
+    box-shadow: 10px 5px 10px  rgb(136, 136, 136);
+
+}
+.second_table td:last-child,td:nth-last-child(2)  {
+    background-color: rgb(199, 193, 199);
+    text-align: center;
+}
+.before_d {
+    text-decoration:line-through rgb(75, 71, 71);
+}
+.second_table td {
+    text-align: center;    
+}
+.current_day {
+    border-radius: 45%;
+    border:2px solid red;
+    outline: none;
+}
+.not_cur_month {
+    color:rgb(126, 126, 126);
+}
+.picture {
+    background-image: url(img/giphy.gif);
+    background-size: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width:400px;
+}
