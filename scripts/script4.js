@@ -1,6 +1,6 @@
 setInterval(disco,1000);
 
-const div = document.querySelector('.picture');
+let div = document.querySelector('.picture');
 
 function disco(){
 
@@ -16,4 +16,4 @@ button.addEventListener("click",(event)=>{
         div.style.display = "none";
       }
 });
-disco_int();
+disco();

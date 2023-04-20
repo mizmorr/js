@@ -79,3 +79,33 @@ div.date > p {
     height: 400px;
     width:400px;
 }
+div.random {
+    margin-top:50px;
+}
+table.random {
+    border:1px solid rgb(0, 115, 168);
+  }
+tr.random > td {
+    border:1px solid rgb(0, 115, 168);
+    background-color:transparent;
+    padding:20px;
+    color:rgb(5, 81, 126);
+    text-shadow: 0px 0px 20px #005858;
+}
+.lightned:hover {
+    box-shadow: 0px 0px 12px rgb(0, 115, 168);
+}
+tr.random >td:hover {
+    cursor: pointer;
+} 
+.ul-sweets {
+    list-style-type: none;
+    width:10vh;
+    box-shadow: -10px 0px 10px rgb(0, 115, 168), -10px 0px 15px rgb(108, 255, 63);
+    border-radius: 15%;
+}
+.li-sweets {
+    margin:10px;
+    font-family: 'Playfair Display', serif;
+    color:#005858;
+}
