@@ -53,7 +53,7 @@ div.date > p {
     box-shadow: 10px 5px 10px  rgb(136, 136, 136);
 
 }
-.second_table td:last-child,td:nth-last-child(2)  {
+.second_table td:last-child, .second_table td:nth-last-child(2)  {
     background-color: rgb(199, 193, 199);
     text-align: center;
 }
@@ -78,6 +78,7 @@ div.date > p {
     background-repeat: no-repeat;
     height: 400px;
     width:400px;
+    z-index: 1;
 }
 div.random {
     margin-top:50px;
@@ -108,4 +109,92 @@ tr.random >td:hover {
     margin:10px;
     font-family: 'Playfair Display', serif;
     color:#005858;
+}
+.under_pict{
+    color:#005858;
+    font-size: 32px;
+}
+
+.under > img {
+    max-width: 75%;
+    max-height: 75%;
+    margin:0 auto;
+    display: block;
+    z-index:1;
+}
+.centered {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:-1;
+}
+.under {
+    position: relative;
+    margin-top:40px;
+}
+.form-input{
+    border:0;
+    border-bottom:2px solid #ccc;
+    margin:10px 0 10px 0;
+    max-width: 120px;
+    height: 3vh;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+}
+.form-input:hover {
+
+    background-color: #e0e0e0;
+}
+.form-input:focus {
+    border:1px solid #e0e0e0;
+
+}
+.form-input:active {
+    border:1px solid #e0e0e0;
+}
+.form-field {
+    border:0;
+    border-top:1px solid #e0e0e0;
+    border-right:1px solid #e0e0e0;
+}
+.form {
+    color:#777777;
+    margin-top:20px;
+    max-width:440px ;
+    box-shadow: -10px 4px 10px rgba(0,0,0,0.2);
+    background: repeating-linear-gradient(45deg,rgb(216, 216, 216),rgb(192, 192, 192) 30px);
+}
+.form-field-in {
+    border:0;
+    border-top:1px solid #e0e0e0;
+    border-left:1px solid #e0e0e0;
+}
+.container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.column:last-child {
+    margin-left:70px;
+}
+.col {
+    position:relative;
+    margin:auto;
+}
+.btn-subm {
+    border:1px solid #e0e0e0;
+    border-radius: 15%;
+    margin-top:10px;
+    background-color: transparent;
+    color:#777777;
+    padding:8px;
+}
+.btn-subm:hover {
+    background-color: #e9e9e9;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.right {
+    position:absolute; 
+    right:0;
 }
