@@ -145,13 +145,8 @@ tr.random >td:hover {
 
     background-color: #e0e0e0;
 }
-.form-input:focus {
-    border:1px solid #e0e0e0;
 
-}
-.form-input:active {
-    border:1px solid #e0e0e0;
-}
+
 .form-field {
     border:0;
     border-top:1px solid #e0e0e0;
@@ -197,4 +192,73 @@ tr.random >td:hover {
 .right {
     position:absolute; 
     right:0;
+}
+
+.form-2 {
+    color:hsl(0, 0%, 100%);
+    margin-top:20px;
+    max-width:440px;
+    font-size: 18px;
+    box-shadow: -10px 4px 10px rgba(0,0,0,0.2);
+    background: #58a;
+    background-image: 
+        /* linear-gradient(white 2px, transparent 0),
+        linear-gradient(90deg, white 2px, transparent 0), */
+        linear-gradient(hsla(0,0%,100%,.07) 1px, transparent 0),
+        linear-gradient(90deg,hsla(0,0%,100%,.07) 1px, transparent 0);
+    font-family: 'Lora', serif;
+
+    background-size: 15px 15px, 15px 15px;
+}
+
+.text-legend {
+    font-size: 16px;
+}
+.text-middle {
+    font-size: 18px;
+}
+
+.spec-select {
+    color:white;
+    border:1px solid #e0e0e0;
+    border-radius: 7%;
+    padding:4px 12px 4px 12px;
+    margin-left:10px;
+    background-image: linear-gradient(45deg, #58a,rgb(255, 254, 255));
+}
+.field-item {
+    margin: 15px 0px 15px 0px;
+}
+.spec-select:hover {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-2{
+    font-size: 20px;
+    color:#e0e0e0;
+    border-radius: 10%;
+    border:1px solid #e0e0e0;
+    margin:10px 10px 10px 0px;
+    padding:10px;
+    background-color: transparent;
+    
+}
+.btn-2:hover {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(45deg, #58a,rgb(255, 254, 255));
+    padding: 12px;
+}
+.form-input-2{
+    background-color: transparent;
+    border:0;
+    border-bottom:2px solid #ccc;
+    margin:10px 0 10px 0;
+    max-width: 120px;
+    height: 3vh;
+    color:white;
+}
+
+.form-input-2:focus {
+    border:0;
+    border-bottom:2px solid #ccc;
+    outline: 0;
 }
