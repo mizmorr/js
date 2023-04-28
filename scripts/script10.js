@@ -14,29 +14,30 @@ first_name.addEventListener('focus',()=>{
   first_name.style.textDecoration="none";
   name_focus=true;
   console.log('focus')
+
 });
 
 first_name.addEventListener('blur',()=>{
 
-  if (name_focus&&!/^[A-Z]{1}[a-z]+$/.test(first_name.innerText)){
+  if (name_focus&&!/^[A-Z]{1}[a-z]+$/.test(first_name.value)){
     // alert("Please enter correct name");
     first_name.style.textDecoration="red wavy underline";
   }
   name_focus=false;
 });
 let last_name_focus=false;
-last_name=document.getElementById('last_name_2')
-last_name.addEventListener('focus',()=>{
-  last_name.style.textDecoration="none";
+last_name2=document.getElementById('last_name_2')
+last_name2.addEventListener('focus',()=>{
+  last_name2.style.textDecoration="none";
   last_name_focus=true;
   console.log('focus')
 });
 
-last_name.addEventListener('blur',()=>{
-
-  if (last_name_focus&&!/^[A-Z]{1}[a-z]+$/.test(last_name.innerText)){
+last_name2.addEventListener('blur',()=>{
+  console.log(last_name2.value)
+  if (last_name_focus&&!/^[A-Z]{1}[a-z]+$/.test(last_name2.value)){
     // alert("Please enter correct name");
-    last_name.style.textDecoration="red wavy underline";
+    last_name2.style.textDecoration="red wavy underline";
   }
   last_name_focus=false;
 });
@@ -51,7 +52,7 @@ phone.addEventListener('focus',()=>{
 
 last_name.addEventListener('blur',()=>{
 
-  if (phone_focus&&!/^\+{1}[0-9]{11}$/.test(phone.innerText)){
+  if (phone_focus&&!/^\+{1}[0-9]{11}$/.test(phone.value)){
     // alert("Please enter correct name");
     phone.style.textDecoration="red wavy underline";
   }
@@ -69,7 +70,7 @@ email.addEventListener('focus',()=>{
 
 email.addEventListener('blur',()=>{
 
-  if (email_focus&&!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.innerText)){
+  if (email_focus&&!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)){
     // alert("Please enter correct name");
     email.style.textDecoration="red wavy underline";
   }
